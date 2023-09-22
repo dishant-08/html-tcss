@@ -890,3 +890,18 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.hover\:shadow-orange-900:hover {
+  --tw-shadow-color: #7c2d12;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover\:shadow-orange-700:hover {
+  --tw-shadow-color: #c2410c;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover\:shadow-bgclr-100x:hover {
+  --tw-shadow-color: #ef5a3c;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
