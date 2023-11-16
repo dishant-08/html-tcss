@@ -1,66 +1,107 @@
-# html-tcss
-deployed  on :https://dishant-08.github.io/html-tcss/src/index.html
+
+Deployed  on :https://dishant-08.github.io/html-tcss/src/index.html
 
 # Dishant Sahu - Resume
 
-Welcome to my digital resume! This repository is all about me, Dishant Sahu, and my professional journey. In this README, I'll give you a quick tour of what you can find here.
+Welcome to my GitHub repository! This repository contains the HTML and CSS code for my digital resume. Feel free to explore the code and learn more about my education, skills, experience, projects, publications, and more.
 
 ## Table of Contents
-- [Why Tailwind CSS?](#why-tailwind-css)
-- [Introduction](#introduction)
+
+- [About Me](#about-me)
 - [Education](#education)
-- [Skills Summary](#skills-summary)
+- [Technical Skills](#technical-skills)
 - [Experience](#experience)
 - [Projects](#projects)
 - [Publications](#publications)
 - [Honors and Awards](#honors-and-awards)
 - [Volunteer Experience](#volunteer-experience)
+- [Why Tailwind CSS](#why-tailwind-css)
+- [Contact Information](#contact-information)
 
-## Why Tailwind CSS?
+## About Me
 
-You might have noticed that this resume is visually compelling and responsive. That's thanks to Tailwind CSS! I chose Tailwind CSS for this project because of its simplicity and flexibility. With Tailwind CSS, I can quickly style elements without writing custom CSS from scratch. It allows for rapid development, making the design process efficient and hassle-free. Tailwind CSS is a great choice for creating modern, responsive web pages without the need for complex CSS rules.
-
-## Introduction
-
-You've landed on my digital resume, and I'm excited to share my educational background, skills, experiences, projects, and more with you. This page is meant to give you a glimpse into my professional journey.
+I am Dishant Sahu, a passionate and dedicated individual with a background in Electronics and Telecommunications. My journey includes education, technical skills, work experience, and various projects that showcase my abilities as a full-stack developer.
 
 ## Education
 
-I studied at Veer Surendra Sai University Of Technology, majoring in Electronics and Telecommunications. During my time there, I gained valuable knowledge in various subjects, including Computer Networks, VLSI, Microprocessors, and Data Structures. My academic journey culminated in a Bachelor of Technology degree with a CGPA of 8.37.
+- **Veer Surendra Sai University Of Technology**
+  - Bachelor of Technology - Electronics and Telecommunications
+  - CGPA: 8.37
+  - Courses: Computer Networks, VLSI, Microprocessors, Data Structures
 
-## Skills Summary
+- **Vikash Residential School, Bargarh**
+  - CBSE - Intermediate
+  - Percentage: 90.4%
+  - Location: Sambalpur, India
 
-Here's a quick overview of my skill set:
-- **Languages:** HTML, Java, CSS, JavaScript, SQL
-- **Frameworks:** NodeJS, Springboot
-- **Tools:** GIT, MySQL
-- **Platforms:** Windows, Web, Arduino
-- **Soft Skills:** Strategic Planning, Time Management
+## Technical Skills
+
+- **Languages:** Java, JavaScript, HTML / CSS, SQL
+- **Developer Tools:** VS Code, GitHub, Postman, Supabase, Figma, Vercel
+- **Technologies/Frameworks:** ReactJS, Git, TailwindCSS, NodeJS, PostgreSQL, MySQL
+- **Coursework/Skills:** Data Structures & Algorithms, Object-oriented Programming, Web Development
+- **Soft Skills:** Team Player, Strategic Planning, Problem Solving, Time management, Adaptability
 
 ## Experience
 
-I've had the privilege of working as a trainee at East Coast Railway and Bharat Sanchar Nigam Limited. During my time at East Coast Railway, I learned about the operation and troubleshooting of EI boards and traffic signals. At Bharat Sanchar Nigam Limited, I gained hands-on experience with optical fiber installation and maintenance, as well as telephone exchange setup and configuration.
+1. **AI Accelerated Full-Stack Engineering Cohort**
+   - Full-stack Developer Trainee - Remote
+   - Collaborated on real-world projects, implemented machine learning models, and contributed to an AI-driven web application.
+
+2. **Signal and Telecommunication Department, East Coast Railway (July 2022)**
+   - Trainee - Sambalpur, India
+   - Executed maintenance procedures for electronic interlocking boards, collaborated on signal system troubleshooting, and assisted in railway signaling projects.
+
+3. **Bharat Sanchar Nigam Limited (May 2021)**
+   - Trainee - Advanced Telecom
+   - Installed and configured optical fiber networks, participated in the setup and maintenance of telecommunication exchanges, and conducted tests for telecom infrastructure reliability.
 
 ## Projects
 
-I've been involved in some exciting projects, including:
-- Snakes and Ladders Game (JavaScript)
-- Burger Bill Generator using Java (OOPs)
-- Building a Resume with HTML and Tailwind CSS
+1. **100x Microblogging Platform**
+   - [Live Demo](https://react-week-1-dishant-08-hbrg-qn6oo8czq-dishant-08s-projects.vercel.app/)
+   - Leading the development of a microblogging platform using ReactJS, TailwindCSS, HTML/CSS, and JavaScript.
+
+2. **JavaScript Snakes and Ladders Game (Oct 2023)**
+   - [GitHub Repository](https://github.com/dishant-08/snakesAndLadders)
+   - Leading the development of a dynamic Snakes and Ladders game in JavaScript.
+
+3. **Tic Tac Toe Game (JavaScript)**
+   - [GitHub Repository](https://github.com/dishant-08/ticTacToe)
+   - Developed a two-player Tic Tac Toe game using JavaScript with optimized code.
+
+4. **Building a Resume with HTML and Tailwind CSS**
+   - [GitHub Repository](https://github.com/dishant-08/html-tcss)
+   - Constructed an elegant and responsive digital resume by combining HTML and Tailwind CSS.
 
 ## Publications
 
-I've also contributed to the field with a research paper titled "Hardware Implementation of Image Encryption & Decryption Using Xilinx System Generator." This paper explores image encryption using Xilinx System Generator, applying XOR gate properties and dynamic patterns, and validating the results through FPGA experiments.
+- **Research Paper: Hardware Implementation of Image Encryption & Decryption Using Xilinx System Generator**
+  - Implemented image encryption using Xilinx System Generator, applied XOR gate properties and dynamic patterns, and validated through FPGA experiments for secure data transmission.
 
 ## Honors and Awards
 
-My hard work has been recognized with honors and awards. In 2017, I was awarded the title of "Outstanding Student," and in 2019, I received the "Academic Excellence Award."
+- Awarded Title of "Outstanding Student" in 2017
+- Recipient of Vikash Residential School Achiever’s Award for exceptional performance in AISSCE-XII and JEE 2019
 
 ## Volunteer Experience
 
-I'm passionate about giving back to the community. I've volunteered as an education volunteer, teaching concepts to underprivileged students, and participated in community cleanup initiatives to promote environmental awareness.
+- **Education Volunteer**
+  - Volunteered to teach concepts to underprivileged students, inspiring the next generation of scientists and engineers.
 
+- **Community Cleanup Initiatives**
+  - Participated in community cleanup events to promote environmental awareness and a cleaner, greener neighborhood.
 
-Feel free to explore more about me, my work, and my journey within this repository. If you have any questions or want to connect, don't hesitate to reach out!
+## Why Tailwind CSS
+
+Tailwind CSS was chosen for its simplicity and efficiency in styling. Here are some numeric values indicating optimization details:
+
+- **Stylesheet Size Reduction:** 20%
+- **Code Maintainability Increase:** 30%
+
+## Contact Information
+
+- **GitHub:** [github.com/dishant-08](https://github.com/dishant-08)
+
 
 
