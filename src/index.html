@@ -4,9 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dishant Sahu - Resume</title>
+    <meta name="description" content="Dishant Sahu's resume showcasing skills, education, projects, and more." />
+    <meta name="keywords" content="Dishant Sahu, Resume, Web Development, JavaScript, React, HTML, CSS" />
+    <meta name="author" content="Dishant Sahu" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Content-Language" content="en" />
     <link rel="stylesheet" href="../dist/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap"
       rel="stylesheet"
@@ -16,11 +28,29 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
   </head>
-  <body>
+  <body >
     <header
       class="bg-bgclr-100x border-2 border-black flex-col justify-between flex-wrap"
     >
       <div>
+        <nav class="  md:bg-gradient-to-r from-blue-500 to-cyan-500 md:border-2 md:flex md:flex-nowrap md:justify-around pb-3 flex-wrap p-4">
+          <div class="md:hidden">
+              <button class="menu-toggle block">
+                  <i class="fas fa-bars text-3xl"></i>
+              </button>
+          </div>
+      
+          <div id="menu" class="hidden md:flex font-bold  bg-gradient-to-r from-blue-500 to-cyan-500">
+              <a href="#introduction" class="block  py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300">Introduction</a>
+              <a href="#education" class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300">Education</a>
+              <a href="#technical-skills" class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300">Technical Skills</a>
+              <a href="#experience" class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300">Experience</a>
+              <a href="#projects" class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300">Projects</a>
+              <a href="#publications" class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300">Publications</a>
+              <a href="#honors-and-awards" class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300">Honors & Awards</a>
+              <a href="#volunteer-experience" class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300">Volunteer Experience</a>
+          </div>
+      </nav>
         <h1
           class="py-10 text-sky-100 text-center text-7xl uppercase font-mono font-bold tracking-wider"
         >
@@ -28,10 +58,10 @@
         </h1>
       </div>
 
-      <nav
-        class="flex md:flex-nowrap md:justify-around pb-3 flex-wrap justify-center"
+      <div
+      class="flex md:flex-nowrap md:justify-around pb-3 gap-4 flex-wrap justify-center"
       >
-     
+      
         <div >
           <a
             href="https://dishant-08.github.io/html-tcss/src/index.html"
@@ -64,12 +94,29 @@
             <b>Mobile:</b> +91-7978747037</span
           >
         </div>
-      </nav>
+      </div>
     </header>
+
+  
+    
 
     <main class="flex flex-col items-center">
 
-      <section
+      <section id="introduction"
+      class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl">
+      <h4 class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold">
+          CAREER OBJECTIVE
+      </h4>
+      <div class="border-b-2 border-black"></div>
+      <p class="text-black mx-10 font-dm text-center font-medium md:p-4 p-2 ">
+          Enthusiastic student with a strong drive to learn, focused on acquiring new skills and making valuable
+          contributions. Demonstrates reliability through consistent performance and excels in diverse technical
+          domains by embracing challenges and delivering results.
+      </p>
+  </section>
+
+
+      <section id="education"
         class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
       >
         <h4
@@ -111,7 +158,7 @@
         </ul>
       </section>
 
-      <section
+      <section id="technical-skills"
         class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
       >
         <h4
@@ -156,7 +203,7 @@
 
       <!-- <p class="text-bgclr-100x font-semibold"><i>Trainee</i></p> -->
 
-      <section
+      <section id="experience"
         class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
       >
         <h4
@@ -240,7 +287,7 @@
       </section>
 
       
-      <section
+      <section id="projects"
         class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
       >
         <h4
@@ -251,48 +298,48 @@
         <div class="border-b-2 border-black"></div>
         <ul class="list-disc text-black mx-10 font-dm">
             <!-- Project: 100x Microblogging Platform -->
-            <li class="mb-6 bg-gradient-to-r from-blue-200 to-blue-400 p-4 rounded-lg">
+            <li class="mb-6 bg-blue-400 p-4 rounded-lg my-2 ">
                 <a href="https://react-week-1-dishant-08-hbrg-qn6oo8czq-dishant-08s-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    <strong class="text-xl text-white">100x Microblogging Platform</strong>
+                    <strong class="text-xl  border-b-4  text-black border-black rounded-[0.1rem] ">100x Microblogging Platform</strong>
                 </a>
-                <p class="mb-2 text-white">Leading the development of a microblogging platform, closely mimicking the functionality of Twitter.</p>
-                <p class="mb-2 text-white">Utilizing ReactJS, TailwindCSS, HTML/CSS, and JavaScript for seamless user experience.</p>
-                <p class="mb-2 text-white">Implementing responsive design practices for various devices and screen sizes.</p>
-                <p class="mb-2 text-white">Optimizing project efficiency with TailwindCSS, resulting in a 20% reduction in stylesheet size and faster load times.</p>
-                <p class="mb-2 text-white">Strategically employing ReactJS for modular development, contributing to a 30% increase in code maintainability.</p>
+                <p class="my-2 text-white"> •  Leading the development of a microblogging platform, closely mimicking the functionality of Twitter.</p>
+                <p class="mb-2 text-white"> • Utilizing ReactJS, TailwindCSS, HTML/CSS, and JavaScript for seamless user experience.</p>
+                <p class="mb-2 text-white"> • Implementing responsive design practices for various devices and screen sizes.</p>
+                <p class="mb-2 text-white"> • Optimizing project efficiency with TailwindCSS, resulting in a 20% reduction in stylesheet size and faster load times.</p>
+                <p class="mb-2 text-white"> • Strategically employing ReactJS for modular development, contributing to a 30% increase in code maintainability.</p>
             </li>
     
             <!-- Project: JavaScript Snakes and Ladders Game -->
-            <li class="mb-6 bg-gradient-to-r from-green-200 to-green-400 p-4 rounded-lg">
+            <li class="mb-6 bg-green-500 p-4 rounded-lg">
                 <a href="https://github.com/dishant-08/snakesAndLadders" target="_blank" rel="noopener noreferrer">
-                    <strong class="text-xl text-white">JavaScript Snakes and Ladders Game (Oct 2023)</strong>
+                    <strong class="text-xl  border-b-4  text-black border-black rounded-[0.1rem]">JavaScript Snakes and Ladders Game (Oct 2023)</strong>
                 </a>
-                <p class="mb-2 text-white">Leading the development of a dynamic Snakes and Ladders game in JavaScript.</p>
-                <p class="mb-2 text-white">Incorporating player movement, dice rolling, and advanced game orchestration.</p>
-                <p class="mb-2 text-white">Optimizing gameplay using the Map data structure for a 20% increase in position tracking efficiency.</p>
-                <p class="mb-2 text-white">Implementing an array-based logic for player movements, resulting in a 15% faster gameplay.</p>
-                <p class="mb-2 text-white">Enhancing user experience by incorporating a robust game logic, contributing to a 25% reduction in bugs.</p>
+                <p class="my-2 text-white"> • Leading the development of a dynamic Snakes and Ladders game in JavaScript.</p>
+                <p class="mb-2 text-white"> • Incorporating player movement, dice rolling, and advanced game orchestration.</p>
+                <p class="mb-2 text-white"> • Optimizing gameplay using the Map data structure for a 20% increase in position tracking efficiency.</p>
+                <p class="mb-2 text-white"> • Implementing an array-based logic for player movements, resulting in a 15% faster gameplay.</p>
+                <p class="mb-2 text-white"> • Enhancing user experience by incorporating a robust game logic, contributing to a 25% reduction in bugs.</p>
             </li>
     
             <!-- Project: Snakes and Ladders Game (JavaScript) -->
-            <li class="mb-6 bg-gradient-to-r from-green-200 to-green-400 p-4 rounded-lg">
+            <li class="mb-6 bg-cyan-500 p-4 rounded-lg">
                 <a href="https://github.com/dishant-08/ticTacToe" target="_blank" rel="noopener noreferrer">
-                    <strong class="text-xl text-white">Tic Tac Toe Game (JavaScript)</strong>
+                    <strong class="text-xl  border-b-4  text-black border-black rounded-[0.1rem]">Tic Tac Toe Game (JavaScript)</strong>
                 </a>
-                <p class="mb-2 text-white">Developed a two-player Tic Tac Toe game using JavaScript with optimized code.</p>
-                <p class="mb-2 text-white">Implemented player names, move validation, and efficient turn-based gameplay.</p>
-                <p class="mb-2 text-white">Utilized data structures for game logic, ensuring a seamless and enjoyable experience.</p>
-                <p class="mb-2 text-white">Enhanced code readability and maintainability for future updates and modifications.</p>
+                <p class="my-2 text-white"> • Developed a two-player Tic Tac Toe game using JavaScript with optimized code.</p>
+                <p class="mb-2 text-white"> • Implemented player names, move validation, and efficient turn-based gameplay.</p>
+                <p class="mb-2 text-white"> • Utilized data structures for game logic, ensuring a seamless and enjoyable experience.</p>
+                <p class="mb-2 text-white"> • Enhanced code readability and maintainability for future updates and modifications.</p>
             </li>
     
             <!-- Project: Building a Resume with HTML and Tailwind CSS -->
-            <li class="mb-6 bg-gradient-to-r from-pink-200 to-pink-400 p-4 rounded-lg">
+            <li class="mb-6 bg-pink-500 p-4 rounded-lg">
                 <a href="https://github.com/dishant-08/html-tcss" target="_blank" rel="noopener noreferrer">
-                    <strong class="text-xl text-white">Building a Resume with HTML and Tailwind CSS</strong>
+                    <strong class="text-xl  border-b-4  text-black border-black rounded-[0.1rem]  ">Building a Resume with HTML and Tailwind CSS</strong>
                 </a>
-                <p class="mb-2 text-white">Constructed an elegant and responsive digital resume by combining HTML and Tailwind CSS.</p>
-                <p class="mb-2 text-white">Implemented Tailwind CSS classes for a consistent and visually appealing design.</p>
-                <p class="mb-2 text-white">Ensured cross-browser compatibility and responsiveness for optimal user experience.</p>
+                <p class="my-2 text-white"> • Constructed an elegant and responsive digital resume by combining HTML and Tailwind CSS.</p>
+                <p class="mb-2 text-white"> • Implemented Tailwind CSS classes for a consistent and visually appealing design.</p>
+                <p class="mb-2 text-white"> • Ensured cross-browser compatibility and responsiveness for optimal user experience.</p>
             </li>
         </ul>
     </section>
@@ -300,13 +347,13 @@
 
     
     
-      <section
+      <section id="publications"
         class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
       >
         <h4
           class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
         >
-          PUBLICATIONS
+          RESEARCH PROJECT
         </h4>
         <div class="border-b-2 border-black"></div>
         <ul class="list-disc text-black mx-10 font-dm">
@@ -326,7 +373,7 @@
         </ul>
       </section>
 
-      <section
+      <section id="honors-and-awards"
         class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
       >
         <h4
@@ -342,7 +389,7 @@
         </ul>
       </section>
 
-      <section
+      <section id="volunteer-experience"
         class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
       >
         <h4
@@ -373,5 +420,13 @@
     <footer class="text-black font-dm bg-bgclr-100x text-center">
       © 2023 Designed by Dishant Sahu
     </footer>
+    <script>
+
+
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.getElementById('menu').classList.toggle('hidden');
+  });
+    </script>
+
   </body>
 </html>
