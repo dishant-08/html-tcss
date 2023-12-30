@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.project-item {
+  width: 100%; /* Set the desired width */
+  height: 100%; /* Auto height, adjust as needed */
+}
+
+@layer utilities {
+  .font-outline-2 {
+    -webkit-text-stroke: 1px #cba59c;
+  }
+  .font-outline-2-black {
+    -webkit-text-stroke: 1px black;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px #ef5a3c;
+  }
+}

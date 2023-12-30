@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dishant Sahu - Resume</title>
-    <meta name="description" content="Dishant Sahu's resume showcasing skills, education, projects, and more." />
-    <meta name="keywords" content="Dishant Sahu, Resume, Web Development, JavaScript, React, HTML, CSS" />
+    <meta
+      name="description"
+      content="Dishant Sahu's resume showcasing skills, education, projects, and more."
+    />
+    <meta
+      name="keywords"
+      content="Dishant Sahu, Resume, Web Development, JavaScript, React, HTML, CSS"
+    />
     <meta name="author" content="Dishant Sahu" />
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
@@ -16,8 +22,21 @@
     <link rel="stylesheet" href="../dist/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap"
@@ -28,49 +47,131 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
   </head>
-  <body >
-    <header
-      class="bg-bgclr-100x border-2 border-black flex-col justify-between flex-wrap"
-    >
-      <div>
-        <nav class="  md:bg-gradient-to-r from-blue-500 to-cyan-500 md:border-2 md:flex md:flex-nowrap md:justify-around pb-3 flex-wrap p-4">
-          <div class="md:hidden">
-              <button class="menu-toggle block">
-                  <i class="fas fa-bars text-3xl"></i>
-              </button>
+  <!-- <div class="h-screen flex flex-col justify-center items-center"> -->
+
+  <body>
+    <div class="z-40" style="position: fixed; top: 0; left: 4">
+      <nav
+        id="navContainer"
+        class="md:bg-bgclr-100x-nav rounded-xl md:border-bgclr-100x md:border-2 md:flex md:flex-nowrap md:justify-start pb-3 flex-wrap p-4 bg-bgclr-100x-nav z-50 fixed"
+      >
+        <div>
+          <!-- Updated this line with inline styles -->
+          <button class="menu-toggle block mx-5">
+            <i class="fas fa-bars text-3xl"></i>
+          </button>
+        </div>
+
+        <div id="menu" class="font-bold bg-bgclr-100x-nav">
+          <div class="md:flex md:ml-48">
+            <a
+              href="#introduction"
+              class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300"
+              >Introduction</a
+            >
+            <a
+              href="#education"
+              class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300"
+              >Education</a
+            >
+            <a
+              href="#technical-skills"
+              class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300"
+              >Technical Skills</a
+            >
+            <a
+              href="#experience"
+              class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300"
+              >Experience</a
+            >
+            <a
+              href="#projects"
+              class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300"
+              >Projects</a
+            >
+            <a
+              href="#publications"
+              class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300"
+              >Publications</a
+            >
+            <a
+              href="#honors-and-awards"
+              class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300"
+              >Honors & Awards</a
+            >
+            <a
+              href="#volunteer-experience"
+              class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300"
+              >Volunteer Experience</a
+            >
           </div>
-      
-          <div id="menu" class="hidden md:flex font-bold  bg-gradient-to-r from-blue-500 to-cyan-500">
-              <a href="#introduction" class="block  py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300">Introduction</a>
-              <a href="#education" class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300">Education</a>
-              <a href="#technical-skills" class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300">Technical Skills</a>
-              <a href="#experience" class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300">Experience</a>
-              <a href="#projects" class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300">Projects</a>
-              <a href="#publications" class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300">Publications</a>
-              <a href="#honors-and-awards" class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300">Honors & Awards</a>
-              <a href="#volunteer-experience" class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300">Volunteer Experience</a>
-          </div>
+        </div>
       </nav>
+    </div>
+
+    <header
+      style="height: 100vh"
+      class="border-2 w-screen border-black flex flex-col items-center justify-center"
+    >
+      <video
+        id="background-video"
+        autoplay
+        muted
+        loop
+        style="
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+        "
+      >
+        <!-- Provide the path to your video file -->
+        <source src="../public/videobg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div style="margin: 2.5rem 0">
         <h1
-          class="py-10 text-sky-100 text-center text-7xl uppercase font-mono font-bold tracking-wider"
+          class="text-black text-center font-outline-2-black text-[3rem] font-dm font-bold tracking-wider"
+        >
+          Hey 👋 There , I'm
+        </h1>
+        <h1
+          class="text-white text-center font-outline-2 text-[6rem] font-dm font-bold tracking-wider"
         >
           Dishant Sahu
         </h1>
+        <!-- style="padding: 1.5rem 0; font-size: large; font-family: cursive"  -->
+        <h2
+          class="text-sky-100 pt-10 font-outline-2-black text-center text-3xl font- font-bold tracking-wider"
+        >
+          Full Stack Developer
+        </h2>
       </div>
+      <!-- <div class="py-10 text-center bg-bgclr-100x">
+        <h1 class="text-sky-100 text-4xl md:text-6xl lg:text-7xl uppercase font-bold tracking-wider">
+          Dishant Sahu
+        </h1>
+        <h2 class="text-sky-100 text-2xl md:text-4xl uppercase font-semibold tracking-wider">
+          Full Stack Developer
+        </h2>
+      </div> -->
 
       <div
-      class="flex md:flex-nowrap md:justify-around pb-3 gap-4 flex-wrap justify-center"
+        class="flex md:flex-nowrap md:justify-around pb-3 gap-4 flex-wrap justify-center"
       >
-      
-        <div >
+        <div>
           <a
-            href="https://dishant-08.github.io/html-tcss/src/index.html"
+            href="https://www.linkedin.com/in/dishant-sahu-b18240244/"
             target="_blank"
             rel="noopener noreferrer"
             class="font-mono text-lg"
-            ><i class="text-2xl fab fa-github"></i>
-            <b>Portfolio:</b> Website</a
           >
+            <i class="text-2xl fab fa-linkedin-in"></i>
+            <!-- <b>:</b> dishant-sahu -->
+          </a>
         </div>
         <div>
           <a
@@ -78,31 +179,34 @@
             target="_blank"
             rel="noopener noreferrer"
             class="font-mono text-lg"
-            ><i class="text-2xl fab fa-github"></i>
-            <b>Github :</b> github.com/dishant-08</a
           >
+            <i class="text-2xl fab fa-github"></i>
+            <!-- <b> :</b> github.com/dishant-08 -->
+          </a>
         </div>
         <div>
-          <a href="mailto:dishant.xxx07@gmail.com" class="font-mono text-lg"
-            ><i class="text-2xl fas fa-envelope"></i>
-            <b>Email:</b> dishant.sahu07@gmail.com</a
-          >
+          <a href="mailto:dishant.xxx07@gmail.com" class="font-mono text-lg">
+            <i class="text-2xl fas fa-envelope"></i>
+            <!-- <b>:</b> dishant.sahu07@gmail.com -->
+          </a>
         </div>
         <div>
-          <span class="font-mono text-lg"
-            ><i class="text-2xl fas fa-phone"></i>
-            <b>Mobile:</b> +91-7978747037</span
+          <a
+            href="https://twitter.com/sahu_dishant"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-mono text-lg"
           >
+            <i class="text-2xl fab fa-twitter"></i>
+            <!-- <b> :</b> @sahu_dishant -->
+          </a>
         </div>
       </div>
     </header>
-
-  
-    
+    <!-- </div> -->
 
     <main class="flex flex-col items-center">
-
-      <section id="introduction"
+      <!-- <section id="introduction"
       class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl">
       <h4 class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold">
           CAREER OBJECTIVE
@@ -113,10 +217,631 @@
           contributions. Demonstrates reliability through consistent performance and excels in diverse technical
           domains by embracing challenges and delivering results.
       </p>
-  </section>
+  </section> -->
+      <section
+        id="projects"
+        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 px-4 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
+      >
+        <h4
+          class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
+        >
+          PROJECTS
+        </h4>
+        <div class="border-b-2 border-black"></div>
+        <ul
+          class="flex flex-col items-center justify-center text-black mx-10 font-dm"
+        >
+          <!-- Project: 100x Microblogging Platform -->
+          <div class="flex gap-4 flex-col md:flex-row items-center">
+            <li
+              style="
+                border: 4px solid #ef5a3c;
+                background-color: rgb(241, 243, 216);
+              "
+              class="project-item mb-6 p-4 rounded-lg my-2 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500"
+            >
+              <a
+                href="https://react-week-1-dishant-08-hbrg.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong
+                  class="text-xl border-b-4 text-black border-black rounded-[0.1rem]"
+                  >100x Microblogging Platform</strong
+                >
+              </a>
+              <p class="my-2 text-black">
+                <span
+                  class="text-bgclr-100x font-sans font-extrabold text-[1.23rem] tracking-wide"
+                  >Tech Stack</span
+                >
 
+                : ReactJS, Node.js, PostgreSQL, Supabase
+              </p>
+              <p class="my-2 text-black">
+                Developed a full-stack microblogging platform with ReactJS.
+                <br />
+                <!-- Achieved a 15% improvement in platform responsiveness. <br> -->
+                Deployed a robust Node.js API integrated with PostgreSQL and
+                Supabase. <br />
+              </p>
+              <p class="mb-2 text-black">
+                Learned: Modular development with ReactJS, secure API creation,
+                Supabase integration.
+              </p>
+              <a
+                href="https://react-week-1-dishant-08-hbrg.vercel.app/"
+                class="font-extrabold"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live</a
+              >
+              |
+              <a
+                href="https://github.com/dishant-08/100x-microblogging"
+                class="font-extrabold"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
 
-      <section id="education"
+            <!-- Project: My YouTube App Clone -->
+            <li
+              style="
+                border: 4px solid #ef5a3c;
+                background-color: rgb(241, 243, 216);
+              "
+              class="project-item mb-6 p-4 rounded-lg hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500"
+            >
+              <a
+                href="https://my-youtube-lime.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong
+                  class="text-xl border-b-4 text-black border-black rounded-[0.1rem]"
+                  >My YouTube App Clone</strong
+                >
+              </a>
+              <p class="my-2">
+                <span
+                  class="text-bgclr-100x font-sans font-extrabold text-[1.23rem] tracking-wide"
+                  >Tech Stack</span
+                >
+                : React, Redux, Tailwind CSS
+              </p>
+              <p class="my-2 text-black">
+                Developed a YouTube clone with React, Redux, and Tailwind CSS.
+                <br />
+                <!-- Reduced API calls by 30% through search denouncing techniques. <br> -->
+                Integrated a real-time chat feature for enhanced user
+                engagement. <br />
+              </p>
+              <p class="mb-2 text-black">
+                Learned: Search denouncing techniques, real-time interaction,
+                responsive UI design.
+              </p>
+              <a
+                href="https://my-youtube-lime.vercel.app/"
+                class="font-extrabold"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live</a
+              >
+              |
+              <a
+                href="https://github.com/dishant-08/youtube-clone"
+                class="font-extrabold"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-4 items-center">
+            <!-- Project: AI Resume Generator -->
+            <li
+              style="
+                border: 4px solid #ef5a3c;
+                background-color: rgb(241, 243, 216);
+              "
+              class="project-item mb-6 border-4 border-bgclr-100x p-4 rounded-lg hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500"
+            >
+              <a
+                href="https://ai-resume-xi.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong
+                  class="text-xl border-b-4 text-black border-black rounded-[0.1rem]"
+                  >AI Resume Generator</strong
+                >
+              </a>
+              <p class="my-2 text-black">
+                <span
+                  class="text-bgclr-100x font-sans font-extrabold text-[1.23rem] tracking-wide"
+                  >Tech Stack</span
+                >
+                : React, Tailwind CSS, OpenAI API
+              </p>
+              <p class="my-2 text-black">
+                Developed an AI-powered Resume Generator using React, Tailwind
+                CSS, and OpenAI API. <br />
+                Implemented a user-controlled API throttling button for server
+                load management. <br />
+                <!-- Reduced form submission errors by 15% with Formik and Yup. <br> -->
+              </p>
+              <p class="mb-2 text-black">
+                Learned: OpenAI API integration, server load management, React
+                form handling.
+              </p>
+              <a
+                href="https://ai-resume-xi.vercel.app/"
+                class="font-extrabold"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Live</a
+              >
+              |
+              <a
+                href="https://github.com/dishant-08/ai-resume-generator"
+                class="font-extrabold"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+
+            <!-- Project: JavaScript Snakes and Ladders Game -->
+            <li
+              style="
+                border: 4px solid #ef5a3c;
+                background-color: rgb(241, 243, 216);
+              "
+              class="project-item mb-6 border-4 border-bgclr-100x p-4 rounded-lg hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500"
+            >
+              <a
+                href="https://github.com/dishant-08/snakesAndLadders"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong
+                  class="text-xl border-b-4 text-black border-black rounded-[0.1rem]"
+                  >JavaScript Snakes and Ladders Game (Oct 2023)</strong
+                >
+              </a>
+              <p class="my-2 text-black">
+                <span
+                  class="text-bgclr-100x font-sans font-extrabold text-[1.23rem] tracking-wide"
+                  >Tech Stack</span
+                >
+                : JavaScript, Map data structure
+              </p>
+              <p class="my-2 text-black">
+                Leading the development of a dynamic Snakes and Ladders game in
+                JavaScript. <br />
+                Optimized gameplay using the Map data structure for a 20%
+                increase in efficiency. <br />
+                <!-- Implemented an array-based logic for 15% faster gameplay. <br> -->
+              </p>
+              <p class="mb-2 text-black">
+                Learned: Map data structure, array-based logic, game
+                optimization.
+              </p>
+              <a
+                href="https://github.com/dishant-08/snakesAndLadders"
+                class="font-extrabold"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-4 items-center">
+            <!-- Project: Tic Tac Toe Game (JavaScript) -->
+            <li
+              style="
+                border: 4px solid #ef5a3c;
+                background-color: rgb(241, 243, 216);
+              "
+              class="project-item mb-6 border-4 border-bgclr-100x p-4 rounded-lg hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500"
+            >
+              <a
+                href="https://github.com/dishant-08/ticTacToe"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong
+                  class="text-xl border-b-4 text-black border-black rounded-[0.1rem]"
+                  >Tic Tac Toe Game (JavaScript)</strong
+                >
+              </a>
+              <p class="my-2 text-black">
+                <span
+                  class="text-bgclr-100x font-sans font-extrabold text-[1.23rem] tracking-wide"
+                  >Tech Stack</span
+                >: JavaScript
+              </p>
+              <p class="my-2 text-black">
+                Developed a two-player Tic Tac Toe game using JavaScript. <br />
+                Utilized data structures for game logic, ensuring a seamless and
+                enjoyable experience.
+              </p>
+              <p class="mb-2 text-black">
+                Learned: Player interaction, move validation, turn-based
+                gameplay.
+              </p>
+              <a
+                href="https://github.com/dishant-08/ticTacToe"
+                class="font-extrabold"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+
+            <!-- Project: Tweet API in Node.js -->
+            <li
+              style="
+                border: 4px solid #ef5a3c;
+                background-color: rgb(241, 243, 216);
+              "
+              class="project-item mb-6 border-4 border-bgclr-100x p-4 rounded-lg hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500"
+            >
+              <a
+                href="https://github.com/dishant-08/tweet_database.git"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong
+                  class="text-xl border-b-4 text-black border-black rounded-[0.1rem]"
+                  >Tweet API in Node.js</strong
+                >
+              </a>
+              <p class="my-2 text-black">
+                <span
+                  class="text-bgclr-100x font-sans font-extrabold text-[1.23rem] tracking-wide"
+                  >Tech Stack</span
+                >: Node.js, Express.js, Sequelize, bcrypt
+              </p>
+              <p class="my-2 text-black">
+                Express.js API for a social media platform with user
+                authentication, post handling ,<br />
+                and interaction features.
+              </p>
+              <!-- <p class="mb-2 text-black">Configured CORS, included health checks, file and designed endpoints for  user <br> functionalities. </p> -->
+              <!-- <p class="mb-2 text-black">Live: [Link](#) | GitHub: [Repo](#)</p> -->
+
+              <p class="mb-2 text-black">
+                Learned: Mastered Express.js for robust API development,<br />
+                integrated authentication, post management, and user
+                interactions.
+              </p>
+              <a
+                href="https://github.com/dishant-08/tweet_database.git"
+                class="font-extrabold"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+          </div>
+        </ul>
+      </section>
+
+      <!-- <img class="w-32 h-8" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
+          ReactJS
+          <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="ReactJS"> -->
+
+      <!-- <p class="text-bgclr-100x font-semibold"><i>Trainee</i></p> -->
+      <section
+        id="technical-skills"
+        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
+      >
+        <h4
+          class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
+        >
+          TECHNICAL SKILLS
+        </h4>
+        <div class="border-b-2 border-black"></div>
+        <div
+          class="list-disc flex md:flex-row flex-col flex-nowrap gap-4 text-black mx-10 font-dm"
+        >
+          <!-- Languages Section -->
+          <div
+            class="flex flex-col gap-4 my-3 border-2 border-neutral-700 text-black px-4 font-bold p-4 rounded-md shadow-lg"
+          >
+            <div class="font-bold text-lg mb-4 tracking-wider">Languages:</div>
+            <div class="flex md:flex-col md:flex-nowrap gap-2">
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit transition hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                Java
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                JavaScript
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                HTML / CSS
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                SQL
+              </div>
+            </div>
+          </div>
+
+          <!-- Developer Tools Section -->
+          <div
+            class="flex-1 w-fit flex-col gap-4 my-3 border-2 border-neutral-700 text-black px-6 font-bold p-4 rounded-md shadow-lg"
+          >
+            <div class="text-primary font-bold text-lg mb-4 tracking-wider">
+              Developer Tools:
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                VS Code
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                Github
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                Postman
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                Supabase
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                Figma
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                Vercel
+              </div>
+            </div>
+          </div>
+
+          <!-- Technologies/Frameworks Section -->
+          <div
+            class="flex-1 w-fit flex-col gap-4 my-3 border-2 border-neutral-700 text-black px-6 font-bold p-4 rounded-md shadow-lg"
+          >
+            <div class="text-primary font-bold text-lg mb-4 tracking-wider">
+              Technologies/Frameworks:
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                ReactJS
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                Git
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                TailwindCSS
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                NodeJS
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                PostgreSQL
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                MySQL
+              </div>
+            </div>
+          </div>
+
+          <!-- Coursework/Skills Section -->
+          <div
+            class="flex-1 w-fit flex-col gap-4 my-3 border-2 border-neutral-700 text-black px-6 font-bold p-4 rounded-md shadow-lg"
+          >
+            <div class="text-primary font-bold text-lg mb-4 tracking-wider">
+              Coursework/Skills:
+            </div>
+            <div class="flex flex-row md:flex-col gap-2">
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                Data Structures & Algorithms
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                Object-oriented Programming
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                Web Development
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills Section -->
+          <div
+            class="flex-1 w-fit flex-col gap-4 my-3 border-2 border-neutral-700 text-black px-6 font-bold p-4 rounded-md shadow-lg"
+          >
+            <div class="text-primary font-bold text-lg mb-4 tracking-wider">
+              Soft Skills:
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                Team Player
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                Strategic Planning
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                Problem Solving
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                Time management
+              </div>
+              <div
+                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
+              >
+                Adaptability
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="experience"
+        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
+      >
+        <h4
+          class="my-3 border-2 border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
+        >
+          EXPERIENCE
+        </h4>
+        <div class="border-b-2 border-black"></div>
+
+        <ul class="list-disc mt-6 flex flex-wrap gap-4 space-x-2 mx-10 font-dm">
+          <li class="mb-8 border-2 border-black bg-orange-100 p-6 rounded-2xl">
+            <strong class="text-xl"
+              >AI Accelerated Full-Stack Engineering Cohort</strong
+            >
+            <p class="text-bgclr-100x font-semibold mb-2">
+              Full-stack Developer Trainee - Remote
+            </p>
+            <!-- <p class="mb-2">
+              Acquired programming skills in ReactJS, TailwindCSS, Node.js,
+              PostgreSQL, Supabase, and OpenAI API.
+            </p>
+            <p class="mb-2">
+              Implemented machine learning models to enhance application
+              functionality.
+            </p>
+            <p class="mb-2">
+              Contributed to the development of a cutting-edge AI-driven web
+              application.
+            </p> -->
+            <p class="mb-2">
+              Acquired Skills in ReactJS, TailwindCSS, Node.js, PostgreSQL,
+              OpenAI API
+            </p>
+            <!-- <li>Implemented ML models to enhance app functionality.</li> -->
+            <p class="mb-2">
+              Specialized in efficient project architecture, peer programming,
+              modular design.
+            </p>
+            <p class="mb-2">
+              Contributed to cutting-edge AI-driven web application.
+            </p>
+          </li>
+
+          <li class="mb-8 border-2 border-black bg-orange-100 p-6 rounded-2xl">
+            <strong class="text-xl"
+              >Signal and Telecommunication Department, East Coast Railway (July
+              2022)</strong
+            >
+            <p class="text-bgclr-100x font-semibold mb-2">
+              Trainee - Sambalpur, India
+            </p>
+            <p class="mb-2">
+              Executed maintenance procedures for electronic interlocking
+              boards.
+            </p>
+            <p class="mb-2">
+              Collaborated with senior engineers to troubleshoot signal system
+              issues.
+            </p>
+            <p class="mb-2">
+              Assisted in the planning and execution of railway signaling
+              projects.
+            </p>
+          </li>
+
+          <li class="mb-8 border-2 border-black bg-orange-100 p-6 rounded-2xl">
+            <strong class="text-xl"
+              >Bharat Sanchar Nigam Limited (May 2021)</strong
+            >
+            <p class="text-bgclr-100x font-semibold mb-2">Trainee</p>
+            <p class="mb-2"><i>Advanced Telecom</i></p>
+            <p class="mb-2">
+              Installed and configured optical fiber networks for high-speed
+              data transmission.
+            </p>
+            <p class="mb-2">
+              Participated in the setup and maintenance of telecommunication
+              exchanges.
+            </p>
+            <p class="mb-2">
+              Conducted tests to ensure the reliability and efficiency of
+              telecom infrastructure.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section
+        id="publications"
+        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
+      >
+        <h4
+          class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
+        >
+          RESEARCH PROJECT
+        </h4>
+        <div class="border-b-2 border-black"></div>
+        <ul class="list-disc text-black mx-10 font-dm">
+          <li>
+            <b>
+              Research Paper: Hardware Implementation of Image Encryption &
+              Decryption Using Xilinx System Generator
+            </b>
+            <br />
+            <p>
+              Implemented image encryption using Xilinx System Generator,
+              applied XOR gate properties and dynamic patterns, and validated
+              through FPGA experiments for secure data transmission.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section
+        id="education"
         class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
       >
         <h4
@@ -158,243 +883,8 @@
         </ul>
       </section>
 
-      <section id="technical-skills"
-        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
-      >
-        <h4
-          class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
-        >
-          TECHNICAL SKILLS
-        </h4>
-        <div class="border-b-2 border-black"></div>
-        <ul class="list-disc text-black mx-10 font-dm">
-          <!-- Add details for technical skills from the resume -->
-          <li>
-            <p class="font-dm mb-2">
-              <b>Languages:</b> Java, JavaScript, HTML / CSS, SQL
-            </p>
-          </li>
-          <li>
-            <p class="font-dm mb-2">
-              <b>Developer Tools:</b> VS Code, Github , Postman, Supabase ,
-              Figma, Vercel
-            </p>
-          </li>
-          <li>
-            <p class="font-dm mb-2">
-              <b>Technologies/Frameworks:</b> ReactJS, Git, TailwindCSS, NodeJS,
-              PostgreSQL, MySQL
-            </p>
-          </li>
-          <li>
-            <p class="font-dm mb-2">
-              <b>Coursework/Skills:</b> Data Structures & Algorithms,
-              Object-oriented Programming, Web Development
-            </p>
-          </li>
-          <li>
-            <p class="font-dm mb-2">
-              <b>Soft Skills:</b> Team Player, Strategic Planning, Problem
-              Solving, Time management, Adaptability
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <!-- <p class="text-bgclr-100x font-semibold"><i>Trainee</i></p> -->
-
-      <section id="experience"
-        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
-      >
-        <h4
-          class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
-        >
-          EXPERIENCE
-        </h4>
-        <div class="border-b-2 border-black"></div>
-        <ul class="list-disc text-black mx-10 font-dm">
-          <!-- Add details for "AI Accelerated Full-Stack Engineering Cohort" -->
-        </br>
-          <li class="my-6">
-            <strong class="text-xl"
-              >AI Accelerated Full-Stack Engineering Cohort</strong
-            >
-            <p class="text-bgclr-100x font-semibold mb-2">
-              Full-stack Developer Trainee - Remote
-            </p>
-            <p class="mb-2">
-              Collaborated with a diverse team of developers on real-world
-              projects.
-            </p>
-            <p class="mb-2">
-              Implemented machine learning models to enhance application
-              functionality.
-            </p>
-            <p class="mb-2">
-              Contributed to the development of a cutting-edge AI-driven web
-              application.
-            </p>
-          </li>
-        </br>
-
-          <li class="mb-6">
-            <strong class="text-xl"
-              >Signal and Telecommunication Department, East Coast Railway (July
-              2022)</strong
-            >
-            <p class="text-bgclr-100x font-semibold mb-2">
-              Trainee - Sambalpur, India
-            </p>
-            <p class="mb-2">
-              Executed maintenance procedures for electronic interlocking
-              boards.
-            </p>
-            <p class="mb-2">
-              Collaborated with senior engineers to troubleshoot signal system
-              issues.
-            </p>
-            <p class="mb-2">
-              Assisted in the planning and execution of railway signaling
-              projects.
-            </p>
-          </li>
-        </br>
-
-          <li class="mb-6">
-            <strong class="text-xl"
-              >Bharat Sanchar Nigam Limited (May 2021)</strong
-            >
-            <p class="text-bgclr-100x font-semibold mb-2"><i>Trainee</i></p>
-            <p class="mb-2"><i>Advanced Telecom</i></p>
-            <p class="mb-2">
-              Installed and configured optical fiber networks for high-speed
-              data transmission.
-            </p>
-            <p class="mb-2">
-              Participated in the setup and maintenance of telecommunication
-              exchanges.
-            </p>
-            <p class="mb-2">
-              Conducted tests to ensure the reliability and efficiency of
-              telecom infrastructure.
-            </p>
-          </li>
-
-          <!-- Add more experiences as needed -->
-
-          <!-- Add more experiences as needed -->
-        </ul>
-      </section>
-
-      
-      <section id="projects"
-        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
-      >
-        <h4
-          class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
-        >
-          PROJECTS
-        </h4>
-        <div class="border-b-2 border-black"></div>
-        <ul class="list-disc text-black mx-10 font-dm">
-          <li class="mb-6 bg-blue-400 p-4 rounded-lg my-2">
-            <a href="https://react-week-1-dishant-08-hbrg.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <strong class="text-xl border-b-4 text-black border-black rounded-[0.1rem]">100x Microblogging Platform</strong>
-            </a>
-            <p class="my-2 text-white"> • Architected and developed a full-stack microblogging platform, seamlessly integrating ReactJS for the front end.</p>
-            <p class="mb-2 text-white"> • Optimized user experience through responsive design, achieving a 15% improvement in overall platform responsiveness.</p>
-            <p class="mb-2 text-white"> • Enhanced code maintainability by 30% through strategic use of ReactJS for modular development.</p>
-            <p class="mb-2 text-white"> • Deployed a robust Node.js API, ensuring secure and scalable data management by integrating with PostgreSQL and Supabase.</p>
-        </li>
-    
-        <!-- Project: YouTube App Clone -->
-        <li class="mb-6 bg-green-500 p-4 rounded-lg">
-            <a href="https://my-youtube-lime.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <strong class="text-xl border-b-4 text-black border-black rounded-[0.1rem]">My YouTube App Clone</strong>
-            </a>
-            <p class="my-2 text-white"> • Developed YouTube clone with React, Redux, and Tailwind CSS, mirroring UI/UX of the official site.</p>
-            <p class="mb-2 text-white"> • Implemented denouncing techniques, optimizing API requests and resulting in a 30% reduction in redundant API calls, enhancing overall app performance.</p>
-            <p class="mb-2 text-white"> • Integrated live chat feature for real-time interaction, boosting user engagement and providing a dynamic social experience within the app.</p>
-            <p class="mb-2 text-white"> • Optimized styling with Tailwind CSS, achieving 20% reduction in size, faster load times.</p>
-            <p class="mb-2 text-white"> • Utilized React and Redux for seamless, responsive UI across devices.</p>
-        </li>
-    
-        <!-- Project: AI Resume Generator -->
-        <li class="mb-6 bg-cyan-500 p-4 rounded-lg">
-            <a href="https://ai-resume-xi.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <strong class="text-xl border-b-4 text-black border-black rounded-[0.1rem]">AI Resume Generator</strong>
-            </a>
-            <p class="my-2 text-white"> • Developed an AI-powered Resume Generator using React, Tailwind CSS, and the OpenAI API, ensuring cutting-edge technology integration.</p>
-            <p class="mb-2 text-white"> • Implemented a throttling button for user-controlled API optimization, facilitating effective server load management.</p>
-            <p class="mb-2 text-white"> • Integrated Formik and Yup for robust form handling, reducing form submission errors by 15%.</p>
-            <p class="mb-2 text-white"> • Ensured a responsive design, providing an optimal user experience on both web and desktop platforms.</p>
-        </li>
-    
-            <!-- Project: JavaScript Snakes and Ladders Game -->
-            <li class="mb-6 bg-green-500 p-4 rounded-lg">
-                <a href="https://github.com/dishant-08/snakesAndLadders" target="_blank" rel="noopener noreferrer">
-                    <strong class="text-xl  border-b-4  text-black border-black rounded-[0.1rem]">JavaScript Snakes and Ladders Game (Oct 2023)</strong>
-                </a>
-                <p class="my-2 text-white"> • Leading the development of a dynamic Snakes and Ladders game in JavaScript.</p>
-                <p class="mb-2 text-white"> • Incorporating player movement, dice rolling, and advanced game orchestration.</p>
-                <p class="mb-2 text-white"> • Optimizing gameplay using the Map data structure for a 20% increase in position tracking efficiency.</p>
-                <p class="mb-2 text-white"> • Implementing an array-based logic for player movements, resulting in a 15% faster gameplay.</p>
-                <p class="mb-2 text-white"> • Enhancing user experience by incorporating a robust game logic, contributing to a 25% reduction in bugs.</p>
-            </li>
-    
-            <!-- Project: Snakes and Ladders Game (JavaScript) -->
-            <li class="mb-6 bg-cyan-500 p-4 rounded-lg">
-                <a href="https://github.com/dishant-08/ticTacToe" target="_blank" rel="noopener noreferrer">
-                    <strong class="text-xl  border-b-4  text-black border-black rounded-[0.1rem]">Tic Tac Toe Game (JavaScript)</strong>
-                </a>
-                <p class="my-2 text-white"> • Developed a two-player Tic Tac Toe game using JavaScript with optimized code.</p>
-                <p class="mb-2 text-white"> • Implemented player names, move validation, and efficient turn-based gameplay.</p>
-                <p class="mb-2 text-white"> • Utilized data structures for game logic, ensuring a seamless and enjoyable experience.</p>
-                <p class="mb-2 text-white"> • Enhanced code readability and maintainability for future updates and modifications.</p>
-            </li>
-    
-            <!-- Project: Building a Resume with HTML and Tailwind CSS -->
-            <li class="mb-6 bg-pink-500 p-4 rounded-lg">
-                <a href="https://github.com/dishant-08/html-tcss" target="_blank" rel="noopener noreferrer">
-                    <strong class="text-xl  border-b-4  text-black border-black rounded-[0.1rem]  ">Building a Resume with HTML and Tailwind CSS</strong>
-                </a>
-                <p class="my-2 text-white"> • Constructed an elegant and responsive digital resume by combining HTML and Tailwind CSS.</p>
-                <p class="mb-2 text-white"> • Implemented Tailwind CSS classes for a consistent and visually appealing design.</p>
-                <p class="mb-2 text-white"> • Ensured cross-browser compatibility and responsiveness for optimal user experience.</p>
-            </li>
-        </ul>
-    </section>
-    
-
-    
-    
-      <section id="publications"
-        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
-      >
-        <h4
-          class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
-        >
-          RESEARCH PROJECT
-        </h4>
-        <div class="border-b-2 border-black"></div>
-        <ul class="list-disc text-black mx-10 font-dm">
-          <li>
-            <b 
-              >Research Paper: Hardware Implementation of Image Encryption &
-              Decryption Using Xilinx System Generator
-            </b
-            >
-          </br>
-            <p>
-              Implemented image encryption using Xilinx System Generator,
-              applied XOR gate properties and dynamic patterns, and validated
-              through FPGA experiments for secure data transmission.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section id="honors-and-awards"
+      <section
+        id="honors-and-awards"
         class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
       >
         <h4
@@ -405,12 +895,15 @@
         <div class="border-b-2 border-black"></div>
         <ul class="list-disc text-black mx-8 font-dm">
           <li>Awarded Title of "Outstanding Student" in 2017</li>
-          <li>Recipient of Vikash Residential School Achiever’s Award for exceptional performance in AISSCE-XII and JEE
-            2019</li>
+          <li>
+            Recipient of Vikash Residential School Achiever’s Award for
+            exceptional performance in AISSCE-XII and JEE 2019
+          </li>
         </ul>
       </section>
 
-      <section id="volunteer-experience"
+      <section
+        id="volunteer-experience"
         class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
       >
         <h4
@@ -442,12 +935,27 @@
       © 2023 Designed by Dishant Sahu
     </footer>
     <script>
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("menu").classList.toggle("hidden");
+        });
+      const video = document.getElementById("background-video");
 
-
-    document.querySelector('.menu-toggle').addEventListener('click', function() {
-    document.getElementById('menu').classList.toggle('hidden');
-  });
+      // Set the playback rate (adjust this value accordingly)
+      video.playbackRate = 0.88;
+      const navContainer = document.getElementById("navContainer");
+      window.addEventListener("scroll", () => {
+        // Check if the user has scrolled down (you can customize the scroll threshold)
+        if (window.scrollY > 50) {
+          navContainer.classList.remove("w-10%");
+          console.log(navContainer);
+          navContainer.classList.add("w-full");
+        } else {
+          navContainer.classList.remove("w-full");
+          navContainer.classList.add("w-10%");
+        }
+      });
     </script>
-
   </body>
 </html>
