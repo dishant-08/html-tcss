@@ -19,7 +19,7 @@
     <meta name="theme-color" content="#ffffff" />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="Content-Language" content="en" />
-    <link rel="stylesheet" href="../dist/style.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
@@ -139,7 +139,7 @@
           Hey 👋 There , I'm
         </h1>
         <h1
-          class="text-white text-center font-outline-2 text-[6rem] font-dm font-bold tracking-wider"
+          class="text-white text-center font-outline-2 text-[5rem] md:text-[6rem] font-dm font-bold tracking-wider"
         >
           Dishant Sahu
         </h1>
@@ -258,12 +258,15 @@
 
                 : ReactJS, Node.js, PostgreSQL, Supabase
               </p>
-              <p class="my-2 text-black">
+              <p class="my-2 text-black hidden md:block">
                 Developed a full-stack microblogging platform with ReactJS.
                 <br />
                 <!-- Achieved a 15% improvement in platform responsiveness. <br> -->
-                Deployed a robust Node.js API integrated with PostgreSQL and
-                Supabase. <br />
+                <span class="hidden md:block">
+                  Deployed a robust Node.js API integrated with PostgreSQL and
+                  Supabase.
+                </span>
+                <br />
               </p>
               <p class="mb-2 text-black">
                 Learned: Modular development with ReactJS, secure API creation,
@@ -311,12 +314,15 @@
                 >
                 : React, Redux, Tailwind CSS
               </p>
-              <p class="my-2 text-black">
+              <p class="my-2 text-black hidden md:block">
                 Developed a YouTube clone with React, Redux, and Tailwind CSS.
                 <br />
                 <!-- Reduced API calls by 30% through search denouncing techniques. <br> -->
-                Integrated a real-time chat feature for enhanced user
-                engagement. <br />
+                <span>
+                  Integrated a real-time chat feature for enhanced user
+                  engagement.
+                </span>
+                <br />
               </p>
               <p class="mb-2 text-black">
                 Learned: Search denouncing techniques, real-time interaction,
@@ -366,11 +372,15 @@
                 >
                 : React, Tailwind CSS, OpenAI API
               </p>
-              <p class="my-2 text-black">
+              <p class="my-2 text-black hidden md:block">
                 Developed an AI-powered Resume Generator using React, Tailwind
                 CSS, and OpenAI API. <br />
-                Implemented a user-controlled API throttling button for server
-                load management. <br />
+                <span>
+                  Implemented a user-controlled API throttling button for server
+                  load management.
+                </span>
+
+                <br />
                 <!-- Reduced form submission errors by 15% with Formik and Yup. <br> -->
               </p>
               <p class="mb-2 text-black">
@@ -419,11 +429,15 @@
                 >
                 : JavaScript, Map data structure
               </p>
-              <p class="my-2 text-black">
+              <p class="my-2 text-black hidden md:block">
                 Leading the development of a dynamic Snakes and Ladders game in
                 JavaScript. <br />
-                Optimized gameplay using the Map data structure for a 20%
-                increase in efficiency. <br />
+                <span>
+                  Optimized gameplay using the Map data structure for a 20%
+                  increase in efficiency.
+                </span>
+
+                <br />
                 <!-- Implemented an array-based logic for 15% faster gameplay. <br> -->
               </p>
               <p class="mb-2 text-black">
@@ -465,7 +479,7 @@
                   >Tech Stack</span
                 >: JavaScript
               </p>
-              <p class="my-2 text-black">
+              <p class="my-2 text-black hidden md:block">
                 Developed a two-player Tic Tac Toe game using JavaScript. <br />
                 Utilized data structures for game logic, ensuring a seamless and
                 enjoyable experience.
@@ -507,7 +521,7 @@
                   >Tech Stack</span
                 >: Node.js, Express.js, Sequelize, bcrypt
               </p>
-              <p class="my-2 text-black">
+              <p class="my-2 text-black hidden md:block">
                 Express.js API for a social media platform with user
                 authentication, post handling ,<br />
                 and interaction features.
@@ -548,14 +562,14 @@
         </h4>
         <div class="border-b-2 border-black"></div>
         <div
-          class="list-disc flex md:flex-row flex-col flex-nowrap gap-4 text-black mx-10 font-dm"
+          class="list-disc flex-1 flex md:flex-row justify-center flex-col flex-wrap gap-4 text-black mx-10 font-dm"
         >
           <!-- Languages Section -->
           <div
             class="flex flex-col gap-4 my-3 border-2 border-neutral-700 text-black px-4 font-bold p-4 rounded-md shadow-lg"
           >
             <div class="font-bold text-lg mb-4 tracking-wider">Languages:</div>
-            <div class="flex md:flex-col md:flex-nowrap gap-2">
+            <div class="flex flex-wrap gap-2">
               <div
                 class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit transition hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
               >
@@ -668,7 +682,7 @@
             <div class="text-primary font-bold text-lg mb-4 tracking-wider">
               Coursework/Skills:
             </div>
-            <div class="flex flex-row md:flex-col gap-2">
+            <div class="flex flex-row flex-wrap md:flex-col gap-2">
               <div
                 class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
               >
@@ -726,6 +740,16 @@
       </section>
 
       <section
+        id="publications"
+        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
+      >
+        <h4
+          class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
+        >
+          EXPERIENCE
+        </h4>
+
+        <!-- <section
         id="experience"
         class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
       >
@@ -733,11 +757,13 @@
           class="my-3 border-2 border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
         >
           EXPERIENCE
-        </h4>
+        </h4> -->
         <div class="border-b-2 border-black"></div>
 
         <ul class="list-disc mt-6 flex flex-wrap gap-4 space-x-2 mx-10 font-dm">
-          <li class="mb-8 border-2 border-black bg-orange-100 p-6 rounded-2xl">
+          <li
+            class="mb-8 border-2 border-black bg-orange-100 p-6 rounded-2xl hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500"
+          >
             <strong class="text-xl"
               >AI Accelerated Full-Stack Engineering Cohort</strong
             >
@@ -770,7 +796,9 @@
             </p>
           </li>
 
-          <li class="mb-8 border-2 border-black bg-orange-100 p-6 rounded-2xl">
+          <li
+            class="mb-8 border-2 border-black bg-orange-100 p-6 rounded-2xl hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500"
+          >
             <strong class="text-xl"
               >Signal and Telecommunication Department, East Coast Railway (July
               2022)</strong
@@ -792,7 +820,9 @@
             </p>
           </li>
 
-          <li class="mb-8 border-2 border-black bg-orange-100 p-6 rounded-2xl">
+          <li
+            class="mb-8 border-2 border-black bg-orange-100 p-6 rounded-2xl hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500"
+          >
             <strong class="text-xl"
               >Bharat Sanchar Nigam Limited (May 2021)</strong
             >
