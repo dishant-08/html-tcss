@@ -229,11 +229,9 @@
           PROJECTS
         </h4>
         <div class="border-b-2 border-black"></div>
-        <ul
-          class="flex flex-col items-center justify-center text-black mx-10 font-dm"
-        >
+        <ul class="flex flex-col justify-center text-black mx-10 font-dm">
           <!-- Project: 100x Microblogging Platform -->
-          <div class="flex gap-4 flex-col md:flex-row justify-center">
+          <div class="flex flex-1 gap-4 flex-col md:flex-row justify-center">
             <li
               style="
                 border: 4px solid #ef5a3c;
@@ -340,7 +338,7 @@
             </li>
           </div>
 
-          <div class="flex flex-col md:flex-row gap-4 items-center">
+          <div class="flex flex-1 flex-col md:flex-row gap-4 items-center">
             <!-- Project: AI Resume Generator -->
             <li
               style="
@@ -474,10 +472,12 @@
                 >: JavaScript
               </p>
               <p class="my-2 text-black hidden md:block">
-                Developed a two-player Tic Tac Toe game using JavaScript. <br />
-                Utilized data structures for game logic, ensuring a seamless and
-                enjoyable experience.
+                Engineered a dynamic two-player Tic Tac Toe game using
+                JavaScript, in graphical user interfaces. <br />
+                Implemented advanced data structures for game logic, ensuring a
+                seamless and enjoyable experience for players.
               </p>
+
               <p class="mb-2 text-black">
                 Learned: Player interaction, move validation, turn-based
                 gameplay.
@@ -516,19 +516,19 @@
                 >: Node.js, Express.js, Sequelize, bcrypt
               </p>
               <p class="my-2 text-black hidden md:block">
-                Developed an Express.js API for social media, including user
-                authentication and handling posts and interactions, along with
-                editing User details.
+                Engineered a powerful Express.js API for a dynamic social media
+                platform, featuring seamless post management. <br />
+                Implemented cookies-based authentication for enhanced security
+                and user privacy.
               </p>
 
               <!-- <p class="mb-2 text-black">Configured CORS, included health checks, file and designed endpoints for  user <br> functionalities. </p> -->
               <!-- <p class="mb-2 text-black">Live: [Link](#) | GitHub: [Repo](#)</p> -->
 
               <p class="mb-2 text-black">
-                Learned: Mastered Express.js for robust API development,<br />
-                integrated authentication, post management, and user
-                interactions.
+                Learned : Express.js , authentication, and user interactions.
               </p>
+
               <a
                 href="https://github.com/dishant-08/tweet_database.git"
                 class="font-extrabold"
@@ -634,7 +634,8 @@
             class="flex-1 w-fit flex-col gap-4 my-3 border-2 border-neutral-700 text-black px-6 font-bold p-4 rounded-md shadow-lg"
           >
             <div class="text-primary font-bold text-lg mb-4 tracking-wider">
-              Technologies <span class="hidden md:block">/Frameworks</span>:
+              Technologies
+              <span class="hidden md:inline-block">/Frameworks </span>:
             </div>
             <div class="flex flex-wrap gap-2 md:gap-4">
               <div
@@ -972,7 +973,17 @@
         menuToggle.addEventListener("click", function () {
           menu.classList.toggle("hidden");
         });
+
+        // Add this event listener to close the menu when an option is clicked
+        var navLinks = document.querySelectorAll(".nav-links");
+
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", function () {
+            menu.classList.add("hidden");
+          });
+        });
       });
+
       const video = document.getElementById("background-video");
 
       // Set the playback rate (adjust this value accordingly)

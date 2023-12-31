@@ -590,11 +590,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -621,14 +616,6 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mr-4 {
-  margin-right: 1rem;
-}
-
-.mr-8 {
-  margin-right: 2rem;
 }
 
 .box-border {
@@ -688,14 +675,6 @@ video {
   width: 100vw;
 }
 
-.w-\[70\%\] {
-  width: 70%;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -736,10 +715,6 @@ video {
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -756,26 +731,10 @@ video {
   gap: 1rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .rounded-2xl {
@@ -931,10 +890,6 @@ video {
 
 .pt-7 {
   padding-top: 1.75rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
 }
 
 .text-center {
@@ -1156,10 +1111,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:ml-48 {
-    margin-left: 12rem;
-  }
-
   .md\:ml-5 {
     margin-left: 1.25rem;
   }
@@ -1168,8 +1119,28 @@ video {
     display: block;
   }
 
+  .md\:inline-block {
+    display: inline-block;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:h-\[36rem\] {
+    height: 36rem;
+  }
+
+  .md\:h-\[26rem\] {
+    height: 26rem;
+  }
+
+  .md\:h-\[32rem\] {
+    height: 32rem;
+  }
+
+  .md\:h-\[33rem\] {
+    height: 33rem;
   }
 
   .md\:flex-grow {
@@ -1186,14 +1157,6 @@ video {
 
   .md\:flex-nowrap {
     flex-wrap: nowrap;
-  }
-
-  .md\:items-start {
-    align-items: flex-start;
-  }
-
-  .md\:items-center {
-    align-items: center;
   }
 
   .md\:items-stretch {
