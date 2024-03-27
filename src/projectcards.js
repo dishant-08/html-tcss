@@ -64,7 +64,7 @@ function createProjectCard(project) {
             </div>
             <a href=" ${project.liveLink}" target="_blank"  class="rounded  ${
     project.liveLink ? "" : "hidden"
-  } bg-green-100 text-green-800 border-2 animate-pulse border-bgclr-100x text-base md:text-xl  font-bold me-2 px-2.5 py-0.5 dark:bg-green-900 dark:text-green-300">
+  } bg-green-100 text-green-800 border-2 animate-pulse border-bgclr-100x text-base md:text-xl  font-bold me-2 px-2.5 py-0.5 ">
             Live
             </a>
           </div>
