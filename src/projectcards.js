@@ -78,7 +78,7 @@ function createProjectCard(project) {
             <div class="flex flex-wrap gap-2 md:gap-3">${stackIconsHTML}</div>
             <a href="${
               project.githubLink
-            }" target="_blank" class="p-2 text-sm dark:bg-zinc-800 dark:hover:bg-zinc-950 bg-zinc-100 hover:bg-zinc-200 rounded-md">GitHub</a>
+            }" target="_blank" class="p-2 text-sm dark:bg-zinc-800 dark:text-white dark:hover:bg-zinc-950 bg-zinc-100 hover:bg-zinc-200 rounded-md">GitHub</a>
           </div>
         </div>
       </div>
