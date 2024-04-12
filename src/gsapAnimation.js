@@ -10,7 +10,7 @@ tl.from(".headingname", {
   duration: 1,
 });
 
-tl.from(".hi", {
+tl.to(".hi", {
   rotate: 45,
   x: 10,
   y: -10,

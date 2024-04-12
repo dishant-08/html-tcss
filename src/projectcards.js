@@ -206,7 +206,7 @@ const projects = [
     techStack: "JavaScript",
     learned: "Player interaction, move validation, turn-based gameplay",
     imageSrc:
-      "https://media.discordapp.net/attachments/1178073930192396388/1178074683669762100/image.png?ex=6611b50c&is=65ff400c&hm=4b863f57a8f524652b00141589c28d87baee3f827a068bbf46965291ca4f4ffd&", // Dummy image source
+      "https://github.com/dishant-08/ticTacToe/assets/60565337/438224c3-2af0-4f5d-8bfa-70642494c223", // Dummy image source
     stackIcons: createStackIcons("JavaScript"),
   },
   {
@@ -214,11 +214,36 @@ const projects = [
     githubLink: "https://github.com/dishant-08/tweet_database.git",
     description:
       "Engineered a powerful Express.js API for a dynamic social media platform, featuring seamless post management. Implemented cookies-based authentication for enhanced security and user privacy.",
-    techStack: "Node.js, Express.js, Sequelize, bcrypt",
+    techStack: "Node.js, Express.js, Sequelize, bcrypt , PostgreSQL",
     learned: "Express.js, authentication, and user interactions",
     imageSrc:
       "https://github.com/dishant-08/tweet_database/assets/60565337/cd70444c-79e2-4665-a4d2-08e1b34f437d", // Dummy image source
-    stackIcons: createStackIcons("Node.js, Express.js, Sequelize"),
+    stackIcons: createStackIcons("Node.js, Express.js, Sequelize , PostgreSQL"),
+  },
+  {
+    title: "Truecaller API",
+    githubLink: "https://github.com/dishant-08/asliCaller-api",
+    description:
+      "Developed a REST API for a Truecaller-like application, Implemented features such as registration , login, profile management, spam reporting, and search functionality.",
+    techStack: "Node.js, Express.js, Sequelize, PostgreSQL",
+    learned:
+      "Managing database interactions and Implementing search and spam reporting functionalitiy",
+    imageSrc:
+      "https://github.com/dishant-08/asliCaller-api/assets/60565337/08fbb370-449a-4cdf-869f-9e7f47f31a39",
+    stackIcons: createStackIcons("Node.js, Express.js, Sequelize , PostgreSQL"),
+  },
+  {
+    title: "Crypto Dashboard App",
+    liveLink: "https://crypto-dashb.netlify.app/",
+    githubLink: "https://github.com/dishant-08/KoinxAssignment",
+    description:
+      "Built a crypto dashboard application using React and Tailwind CSS, following the Responsive design from a Figma UI file. Integrated live cryptocurrency data from the CoinGecko API.",
+    techStack: "React, Tailwind CSS",
+    imageSrc:
+      "https://github.com/dishant-08/KoinxAssignment/assets/60565337/f5e117c7-bfbf-4bd0-aaca-828ac49a2c85",
+    learned:
+      "Implemented Figma designs, Dynamic Link and integrated live crypto data from CoinGecko API.",
+    stackIcons: createStackIcons("ReactJS, Tailwind CSS"),
   },
 ];
 // Mapping of technologies to their respective icon URLs
