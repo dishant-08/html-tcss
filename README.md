@@ -1,5 +1,4 @@
-
-Deployed  on :https://dishant-08.github.io/html-tcss/src/index.html
+Deployed on :https://dishant-08.github.io/html-tcss/src/index.html
 
 # Dishant Sahu - Resume
 
@@ -103,5 +102,8 @@ Tailwind CSS was chosen for its simplicity and efficiency in styling. Here are s
 
 - **GitHub:** [github.com/dishant-08](https://github.com/dishant-08)
 
+### To Build :
 
-
+```
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify
+```
