@@ -3,25 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dishant Sahu - Portfolio</title>
-    <meta
-      name="description"
-      content="Dishant Sahu's resume showcasing skills, education, projects, and more."
-    />
-    <meta
-      name="keywords"
-      content="Dishant Sahu, Resume, Web Development, JavaScript, React, HTML, CSS"
-    />
+    <meta name="description" content="Dishant Sahu's portfolio showcasing skills, education, projects, and more." />
+    <meta name="keywords" content="Dishant Sahu, Resume, Web Development, JavaScript, React, HTML, CSS" />
     <meta name="author" content="Dishant Sahu" />
     <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="Content-Language" content="en" />
+    <title>Dishant Sahu - Portfolio</title>
+
+    <!-- Compiled Tailwind CSS -->
     <link rel="stylesheet" href="../dist/output.css" />
+
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- Google Fonts: DM Sans + Dancing Script -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ionicons (ES module + legacy fallback) -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -30,214 +38,126 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Dancing+Script:wght@700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
   </head>
-  <!-- <div class="h-screen flex flex-col justify-center items-center"> -->
 
   <body>
-    <div class="z-40" style="position: fixed; top: 0; left: 4">
-      <nav
-        id="navContainer"
-        class="md:bg-bgclr-100x-nav rounded-xl md:border-bgclr-100x md:border-2 md:flex md:flex-nowrap md:justify-start pb-3 flex-wrap p-4 bg-bgclr-100x-nav z-50 fixed"
-      >
-        <div>
-          <!-- Updated this line with inline styles -->
-          <button class="menu-toggle block mx-5">
-            <i class="fas fa-bars text-4xl"></i>
-          </button>
-        </div>
-
-        <div id="menu" class="hidden font-bold bg-bgclr-100x-nav">
-          <div class="md:flex md:ml-5">
-            <a
-              href="#introduction"
-              class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300"
-              >Introduction</a
-            >
-            <a
-              href="#education"
-              class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300"
-              >Education</a
-            >
-            <a
-              href="#technical-skills"
-              class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300"
-              >Technical Skills</a
-            >
-            <a
-              href="#experience"
-              class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300"
-              >Experience</a
-            >
-            <a
-              href="#projects"
-              class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300"
-              >Projects</a
-            >
-            <a
-              href="#publications"
-              class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300"
-              >Publications</a
-            >
-            <a
-              href="#honors-and-awards"
-              class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300"
-              >Honors & Awards</a
-            >
-            <a
-              href="#volunteer-experience"
-              class="block py-2 px-4 font-mono text-lg md:text-xl nav-links hover:bg-gray-200 hover:text-black md:border-b-2 md:border-transparent transition-all duration-300"
-              >Volunteer Experience</a
-            >
-          </div>
-        </div>
-      </nav>
-    </div>
-
-    <header
-      style="height: 100vh"
-      class="border-2 w-screen border-black flex flex-col items-center justify-center"
+    <!-- ─── Navigation ──────────────────────────────────────────────────────── -->
+    <nav
+      id="navContainer"
+      class="fixed top-0 left-0 z-50 flex flex-wrap items-start p-4
+             bg-bgclr-100x-nav transition-all duration-300
+             md:flex-nowrap md:justify-start md:rounded-xl
+             md:border-2 md:border-bgclr-100x"
     >
+      <!-- Hamburger toggle (visible on all screen sizes) -->
+      <button
+        class="menu-toggle mx-5"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        <i class="fas fa-bars text-4xl"></i>
+      </button>
+
+      <!-- Link list — hidden by default, toggled via JS -->
+      <div id="menu" class="hidden font-bold bg-bgclr-100x-nav">
+        <div class="md:flex md:ml-5">
+          <a href="#introduction"       class="nav-links nav-link">Introduction</a>
+          <a href="#education"          class="nav-links nav-link">Education</a>
+          <a href="#technical-skills"   class="nav-links nav-link">Technical Skills</a>
+          <a href="#experience"         class="nav-links nav-link">Experience</a>
+          <a href="#projects"           class="nav-links nav-link">Projects</a>
+          <a href="#publications"       class="nav-links nav-link">Publications</a>
+          <a href="#honors-and-awards"  class="nav-links nav-link">Honors &amp; Awards</a>
+          <a href="#volunteer-experience" class="nav-links nav-link">Volunteer Experience</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ─── Hero Header ─────────────────────────────────────────────────────── -->
+    <header
+      class="relative h-screen w-screen border-2 border-black
+             flex flex-col items-center justify-center overflow-hidden"
+    >
+      <!-- Background video (z-index -1 keeps it behind all content) -->
       <video
         id="background-video"
         autoplay
         muted
         loop
-        style="
-          object-fit: cover;
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: -1;
-        "
+        class="absolute inset-0 w-full h-full object-cover -z-10"
       >
-        <!-- Provide the path to your video file -->
         <source src="../public/videobg.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div style="margin: 2.5rem 0">
+
+      <!-- Name & title -->
+      <div class="my-10 text-center">
         <h1
-          class="text-black hello flex items-center justify-center gap-5 text-center font-outline-2-black text-[3rem] font-dm font-bold tracking-wider"
+          class="hello flex items-center justify-center gap-5
+                 text-black font-outline-2-black font-dm font-bold
+                 tracking-wider text-[3rem]"
         >
           Hello
-          <div class="hi mx-3">👋</div>
+          <span class="hi mx-3">👋</span>
           , I'm
         </h1>
         <h1
-          class="text-blue-900 headingname text-center text-[5rem] md:text-[7rem] font-dm font-bold tracking-wider"
+          class="headingname text-blue-900 font-dm font-bold
+                 tracking-wider text-[5rem] md:text-[7rem]"
         >
           Dishant Sahu
         </h1>
-        <!-- style="padding: 1.5rem 0; font-size: large; font-family: cursive"  -->
         <h2
-          class="text-sky-100 work pt-7 font-outline-2-black text-center text-3xl font- font-bold tracking-wider"
+          class="work pt-7 text-sky-100 font-outline-2-black font-dm
+                 font-bold tracking-wider text-3xl"
         >
           Full Stack Developer
         </h2>
       </div>
-      <!-- <div class="py-10 text-center bg-bgclr-100x">
-        <h1 class="text-sky-100 text-4xl md:text-6xl lg:text-7xl uppercase font-bold tracking-wider">
-          Dishant Sahu
-        </h1>
-        <h2 class="text-sky-100 text-2xl md:text-4xl uppercase font-semibold tracking-wider">
-          Full Stack Developer
-        </h2>
-      </div> -->
 
-      <div
-        class="flex md:flex-nowrap md:justify-around pb-3 gap-4 flex-wrap justify-center"
-      >
-        <div>
-          <a
-            href="https://www.linkedin.com/in/dishant-sahu-b18240244/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="font-mono text-lg"
-          >
-            <i class="fab fa-linkedin-in" style="color: #156f9f"></i>
-
-            <!-- <b>:</b> dishant-sahu -->
-          </a>
-        </div>
-        <div>
-          <a
-            href="https://github.com/dishant-08"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="font-mono text-lg"
-          >
-            <i class="text-2xl fab fa-github"></i>
-            <!-- <b> :</b> github.com/dishant-08 -->
-          </a>
-        </div>
-        <div>
-          <a href="mailto:dishant.sahu07@gmail.com" class="font-mono text-lg">
-            <i class="text-2xl fas fa-envelope" style="color: #d7e822"></i>
-            <!-- <b>:</b> dishant.sahu07@gmail.com -->
-          </a>
-        </div>
-        <div>
-          <a
-            href="https://twitter.com/sahu_dishant"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="font-mono text-lg"
-          >
-            <i class="text-2xl fab fa-twitter" style="color: #70c3ea"></i>
-            <!-- <b> :</b> @sahu_dishant -->
-          </a>
-        </div>
+      <!-- Social links -->
+      <div class="flex flex-wrap md:flex-nowrap justify-center gap-6 pb-3">
+        <a
+          href="https://www.linkedin.com/in/dishant-sahu-b18240244/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin-in text-2xl" style="color: #156f9f"></i>
+        </a>
+        <a
+          href="https://github.com/dishant-08"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+        <a href="mailto:dishant.sahu07@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope text-2xl" style="color: #d7e822"></i>
+        </a>
+        <a
+          href="https://twitter.com/sahu_dishant"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Twitter"
+        >
+          <i class="fab fa-twitter text-2xl" style="color: #70c3ea"></i>
+        </a>
       </div>
     </header>
-    <!-- </div> -->
 
+    <!-- ─── Main Content ─────────────────────────────────────────────────────── -->
     <main class="flex flex-col items-center">
-      <!-- <section id="introduction"
-      class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl">
-      <h4 class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold">
-          CAREER OBJECTIVE
-      </h4>
-      <div class="border-b-2 border-black"></div>
-      <p class="text-black mx-10 font-dm text-center font-medium md:p-4 p-2 ">
-          Enthusiastic student with a strong drive to learn, focused on acquiring new skills and making valuable
-          contributions. Demonstrates reliability through consistent performance and excels in diverse technical
-          domains by embracing challenges and delivering results.
-      </p>
-  </section> -->
-      <section
-        id="projects"
-        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 px-4 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
-      >
-        <h4
-          class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
-        >
-          PROJECTS
-        </h4>
-        <div class="border-b-2 border-black"></div>
-        <ul class="flex flex-col justify-center text-black md:mx-10 font-dm">
-          <div
-            id="app"
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-4"
-          >
-            <!-- Dynamic content will be rendered here -->
-          </div>
+
+      <!-- Projects ──────────────────────────────────────────────────────────── -->
+      <section id="projects" class="section-card">
+        <h4 class="section-heading">PROJECTS</h4>
+        <div class="section-divider"></div>
+
+        <div class="text-black font-dm">
+          <!-- Cards are injected here by projectcards.js -->
+          <div id="app" class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4"></div>
 
           <button
             id="showMoreBtn"
@@ -245,473 +165,274 @@
           >
             Show More
           </button>
-          <!-- Project: 100x Microblogging Platform -->
-        </ul>
+        </div>
       </section>
 
-      <!-- <img class="w-32 h-8" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
-          ReactJS
-          <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="ReactJS"> -->
+      <!-- Technical Skills ───────────────────────────────────────────────────── -->
+      <section id="technical-skills" class="section-card">
+        <h4 class="section-heading">TECHNICAL SKILLS</h4>
+        <div class="section-divider"></div>
 
-      <!-- <p class="text-bgclr-100x font-semibold"><i>Trainee</i></p> -->
-      <section
-        id="technical-skills"
-        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
-      >
-        <h4
-          class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
-        >
-          TECHNICAL SKILLS
-        </h4>
-        <div class="border-b-2 border-black"></div>
         <div
-          class="list-disc flex-1 flex flex-col flex-wrap gap-4 text-black mx-10 font-dm items-start md:items-stretch md:flex-row md:justify-center"
+          class="flex flex-col md:flex-row flex-wrap gap-4
+                 text-black mx-10 font-dm
+                 items-start md:items-stretch md:justify-center"
         >
-          <!-- Languages Section -->
-          <div
-            class="flex flex-col gap-4 my-3 border-2 border-neutral-700 text-black font-bold p-4 rounded-md shadow-lg"
-          >
-            <div class="font-bold text-lg mb-4 tracking-wider">Languages:</div>
-            <div class="flex flex-wrap box-border md:flex-col md:font gap-2">
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit transition hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                Java
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                JavaScript
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                HTML / CSS
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                SQL
-              </div>
+          <!-- Languages -->
+          <div class="skill-category">
+            <p class="skill-category-title">Languages:</p>
+            <div class="flex flex-wrap md:flex-col gap-2">
+              <div class="skill-badge">Java</div>
+              <div class="skill-badge">JavaScript</div>
+              <div class="skill-badge">HTML / CSS</div>
+              <div class="skill-badge">SQL</div>
             </div>
           </div>
 
-          <!-- Developer Tools Section -->
-          <div
-            class="flex-1 w-fit flex-col gap-4 my-3 border-2 border-neutral-700 text-black px-6 font-bold p-4 rounded-md shadow-lg"
-          >
-            <div class="text-primary font-bold text-lg mb-4 tracking-wider">
-              Developer Tools:
-            </div>
+          <!-- Developer Tools -->
+          <div class="skill-category flex-1">
+            <p class="skill-category-title">Developer Tools:</p>
             <div class="flex flex-wrap gap-2 md:gap-4">
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                VS Code
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                Github
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                Postman
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                Supabase
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                Figma
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                Vercel
-              </div>
+              <div class="skill-badge">VS Code</div>
+              <div class="skill-badge">GitHub</div>
+              <div class="skill-badge">Postman</div>
+              <div class="skill-badge">Supabase</div>
+              <div class="skill-badge">Figma</div>
+              <div class="skill-badge">Vercel</div>
             </div>
           </div>
 
-          <!-- Technologies/Frameworks Section -->
-          <div
-            class="flex-1 w-fit flex-col gap-4 my-3 border-2 border-neutral-700 text-black px-6 font-bold p-4 rounded-md shadow-lg"
-          >
-            <div class="text-primary font-bold text-lg mb-4 tracking-wider">
-              Technologies
-              <span class="hidden md:inline-block">/Frameworks </span>:
-            </div>
+          <!-- Technologies / Frameworks -->
+          <div class="skill-category flex-1">
+            <p class="skill-category-title">
+              Technologies<span class="hidden md:inline"> / Frameworks</span>:
+            </p>
             <div class="flex flex-wrap gap-2 md:gap-4">
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                ReactJS
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                Git
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                PostgreSQL
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                TailwindCSS
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                NodeJS
-              </div>
-
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                MySQL
-              </div>
+              <div class="skill-badge">ReactJS</div>
+              <div class="skill-badge">Git</div>
+              <div class="skill-badge">PostgreSQL</div>
+              <div class="skill-badge">TailwindCSS</div>
+              <div class="skill-badge">NodeJS</div>
+              <div class="skill-badge">MySQL</div>
             </div>
           </div>
 
-          <!-- Coursework/Skills Section -->
-          <div
-            class="flex-1 w-fit flex-col gap-4 my-3 border-2 border-neutral-700 text-black px-6 font-bold p-4 rounded-md shadow-lg"
-          >
-            <div class="text-primary font-bold text-lg mb-4 tracking-wider">
-              Coursework/Skills:
-            </div>
+          <!-- Coursework / Skills -->
+          <div class="skill-category flex-1">
+            <p class="skill-category-title">Coursework / Skills:</p>
             <div class="flex flex-row flex-wrap md:flex-col gap-2">
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                Data Structures & Algorithms
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                Object-oriented Programming
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                Web Development
-              </div>
+              <div class="skill-badge">Data Structures &amp; Algorithms</div>
+              <div class="skill-badge">Object-oriented Programming</div>
+              <div class="skill-badge">Web Development</div>
             </div>
           </div>
 
-          <!-- Soft Skills Section -->
-          <div
-            class="flex-1 w-fit flex-col gap-4 my-3 border-2 border-neutral-700 text-black px-6 font-bold p-4 rounded-md shadow-lg"
-          >
-            <div class="text-primary font-bold text-lg mb-4 tracking-wider">
-              Soft Skills:
-            </div>
+          <!-- Soft Skills -->
+          <div class="skill-category flex-1">
+            <p class="skill-category-title">Soft Skills:</p>
             <div class="flex flex-wrap gap-2">
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                Team Player
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                Strategic Planning
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                Problem Solving
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                Time management
-              </div>
-              <div
-                class="font-semibold px-3 py-2 border border-solid border-orange-500 rounded-md w-fit hover:text-white hover:bg-orange-500 transform hover:scale-105 shadow-md"
-              >
-                Adaptability
-              </div>
+              <div class="skill-badge">Team Player</div>
+              <div class="skill-badge">Strategic Planning</div>
+              <div class="skill-badge">Problem Solving</div>
+              <div class="skill-badge">Time Management</div>
+              <div class="skill-badge">Adaptability</div>
             </div>
           </div>
         </div>
       </section>
 
-      <section
-        id="publications"
-        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
-      >
-        <h4
-          class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
-        >
-          EXPERIENCE
-        </h4>
+      <!-- Experience ─────────────────────────────────────────────────────────── -->
+      <!--
+        NOTE: ID corrected from "publications" → "experience"
+              so the nav link "#experience" scrolls here correctly.
+      -->
+      <section id="experience" class="section-card">
+        <h4 class="section-heading">EXPERIENCE</h4>
+        <div class="section-divider"></div>
 
-        <!-- <section
-        id="experience"
-        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
-      >
-        <h4
-          class="my-3 border-2 border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
-        >
-          EXPERIENCE
-        </h4> -->
-        <div class="border-b-2 border-black"></div>
+        <div class="flex flex-wrap gap-4 mt-6 mx-10 font-dm text-black">
 
-        <ul class="list-disc mt-6 flex flex-wrap gap-4 space-x-2 mx-10 font-dm">
-          <li
-            class="mb-8 border-2 border-black bg-orange-100 p-6 rounded-2xl hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500"
+          <!-- 100x AI Cohort -->
+          <article
+            class="flex-1 min-w-[260px] border-2 border-black bg-orange-100 p-6 rounded-2xl
+                   transition-transform duration-300 ease-in-out
+                   hover:scale-105 hover:shadow-xl hover:shadow-orange-500"
           >
-            <strong class="text-xl"
-              >AI Accelerated Full-Stack Engineering Cohort</strong
-            >
-            <p class="text-bgclr-100x font-semibold mb-2">
-              Full-stack Developer Trainee - Remote
+            <strong class="text-xl">AI Accelerated Full-Stack Engineering Cohort</strong>
+            <p class="text-bgclr-100x font-semibold mt-1 mb-2">
+              Full-stack Developer Trainee &mdash; Remote
             </p>
-            <!-- <p class="mb-2">
-              Acquired programming skills in ReactJS, TailwindCSS, Node.js,
-              PostgreSQL, Supabase, and OpenAI API.
-            </p>
-            <p class="mb-2">
-              Implemented machine learning models to enhance application
-              functionality.
-            </p>
-            <p class="mb-2">
-              Contributed to the development of a cutting-edge AI-driven web
-              application.
-            </p> -->
-            <p class="mb-2">
-              Acquired Skills in ReactJS, TailwindCSS, Node.js, PostgreSQL,
-              OpenAI API
-            </p>
-            <!-- <li>Implemented ML models to enhance app functionality.</li> -->
-            <p class="mb-2">
-              Specialized in efficient project architecture, peer programming,
-              modular design.
-            </p>
-            <p class="mb-2">
-              Contributed to cutting-edge AI-driven web application.
-            </p>
-          </li>
+            <p class="mb-2">Acquired skills in ReactJS, TailwindCSS, Node.js, PostgreSQL, and OpenAI API.</p>
+            <p class="mb-2">Specialized in efficient project architecture, peer programming, and modular design.</p>
+            <p class="mb-2">Contributed to a cutting-edge AI-driven web application.</p>
+          </article>
 
-          <li
-            class="mb-8 border-2 border-black bg-orange-100 p-6 rounded-2xl hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500"
+          <!-- East Coast Railway -->
+          <article
+            class="flex-1 min-w-[260px] border-2 border-black bg-orange-100 p-6 rounded-2xl
+                   transition-transform duration-300 ease-in-out
+                   hover:scale-105 hover:shadow-xl hover:shadow-orange-500"
           >
-            <strong class="text-xl"
-              >Signal and Telecommunication Department, East Coast Railway (July
-              2022)</strong
-            >
-            <p class="text-bgclr-100x font-semibold mb-2">
-              Trainee - Sambalpur, India
+            <strong class="text-xl">
+              Signal &amp; Telecommunication Dept., East Coast Railway (July 2022)
+            </strong>
+            <p class="text-bgclr-100x font-semibold mt-1 mb-2">
+              Trainee &mdash; Sambalpur, India
             </p>
-            <p class="mb-2">
-              Executed maintenance procedures for electronic interlocking
-              boards.
-            </p>
-            <p class="mb-2">
-              Collaborated with senior engineers to troubleshoot signal system
-              issues.
-            </p>
-            <p class="mb-2">
-              Assisted in the planning and execution of railway signaling
-              projects.
-            </p>
-          </li>
+            <p class="mb-2">Executed maintenance procedures for electronic interlocking boards.</p>
+            <p class="mb-2">Collaborated with senior engineers to troubleshoot signal system issues.</p>
+            <p class="mb-2">Assisted in the planning and execution of railway signaling projects.</p>
+          </article>
 
-          <li
-            class="mb-8 border-2 border-black bg-orange-100 p-6 rounded-2xl hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500"
+          <!-- BSNL -->
+          <article
+            class="flex-1 min-w-[260px] border-2 border-black bg-orange-100 p-6 rounded-2xl
+                   transition-transform duration-300 ease-in-out
+                   hover:scale-105 hover:shadow-xl hover:shadow-orange-500"
           >
-            <strong class="text-xl"
-              >Bharat Sanchar Nigam Limited (May 2021)</strong
-            >
-            <p class="text-bgclr-100x font-semibold mb-2">Trainee</p>
-            <p class="mb-2"><i>Advanced Telecom</i></p>
-            <p class="mb-2">
-              Installed and configured optical fiber networks for high-speed
-              data transmission.
+            <strong class="text-xl">Bharat Sanchar Nigam Limited (May 2021)</strong>
+            <p class="text-bgclr-100x font-semibold mt-1 mb-2">
+              Trainee &mdash; Advanced Telecom
             </p>
-            <p class="mb-2">
-              Participated in the setup and maintenance of telecommunication
-              exchanges.
-            </p>
-            <p class="mb-2">
-              Conducted tests to ensure the reliability and efficiency of
-              telecom infrastructure.
-            </p>
-          </li>
-        </ul>
+            <p class="mb-2">Installed and configured optical fiber networks for high-speed data transmission.</p>
+            <p class="mb-2">Participated in the setup and maintenance of telecommunication exchanges.</p>
+            <p class="mb-2">Conducted tests to ensure reliability and efficiency of telecom infrastructure.</p>
+          </article>
+
+        </div>
       </section>
 
-      <section
-        id="publications"
-        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
-      >
-        <h4
-          class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
-        >
-          RESEARCH PROJECT
-        </h4>
-        <div class="border-b-2 border-black"></div>
-        <ul class="list-disc text-black mx-10 font-dm">
+      <!-- Publications / Research ────────────────────────────────────────────── -->
+      <section id="publications" class="section-card hover:scale-105">
+        <h4 class="section-heading">RESEARCH PROJECT</h4>
+        <div class="section-divider"></div>
+
+        <ul class="list-disc text-black mx-10 font-dm mt-4">
           <li>
-            <b>
-              Research Paper: Hardware Implementation of Image Encryption &
+            <strong>
+              Research Paper: Hardware Implementation of Image Encryption &amp;
               Decryption Using Xilinx System Generator
-            </b>
-            <br />
-            <p>
-              Implemented image encryption using Xilinx System Generator,
-              applied XOR gate properties and dynamic patterns, and validated
-              through FPGA experiments for secure data transmission.
+            </strong>
+            <p class="mt-1">
+              Implemented image encryption using Xilinx System Generator, applied XOR gate
+              properties and dynamic patterns, and validated through FPGA experiments for
+              secure data transmission.
             </p>
           </li>
         </ul>
       </section>
 
-      <section
-        id="education"
-        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
-      >
-        <h4
-          class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
-        >
-          EDUCATION
-        </h4>
-        <div class="border-b-2 border-black"></div>
-        <ul class="list-disc text-black">
-          <li class="gap-3 mx-[3rem] mt-2">
-            <strong
-              class="pl-2 pb-3 font-dm leading-4 font-extrabold text-lg md:text-xl"
-              >Veer Surendra Sai University Of Technology</strong
-            >
+      <!-- Education ──────────────────────────────────────────────────────────── -->
+      <section id="education" class="section-card hover:scale-105">
+        <h4 class="section-heading">EDUCATION</h4>
+        <div class="section-divider"></div>
+
+        <ul class="list-disc text-black mt-2">
+          <li class="mx-12 mt-2">
+            <strong class="pl-2 font-dm font-extrabold text-lg md:text-xl leading-4">
+              Veer Surendra Sai University Of Technology
+            </strong>
             <div class="mt-3 pl-2">
               <p>
-                <i
-                  >Bachelor of Technology - Electronics and Telecommunications;
-                  <strong>CGPA: 8.37</strong></i
-                >
+                <i>
+                  Bachelor of Technology &mdash; Electronics and Telecommunications;
+                  <strong>CGPA: 8.37</strong>
+                </i>
               </p>
-              <p>
-                <b>Courses:</b> Computer Networks, VLSI, Microprocessors, Data
-                Structures
-              </p>
+              <p><b>Courses:</b> Computer Networks, VLSI, Microprocessors, Data Structures</p>
             </div>
           </li>
-          <!-- Add details for Vikash Residential School -->
-          <li class="gap-3 mx-[3rem] mt-2">
-            <strong
-              class="pl-2 pb-3 font-dm leading-4 font-extrabold text-lg md:text-xl"
-              >Vikash Residential School, Bargarh</strong
-            >
+
+          <li class="mx-12 mt-4">
+            <strong class="pl-2 font-dm font-extrabold text-lg md:text-xl leading-4">
+              Vikash Residential School, Bargarh
+            </strong>
             <div class="mt-3 pl-2">
-              <p><i>CBSE - Intermediate - Percentage: 90.4%</i></p>
+              <p><i>CBSE &mdash; Intermediate &mdash; Percentage: 90.4%</i></p>
               <p><i>Sambalpur, India</i></p>
             </div>
           </li>
         </ul>
       </section>
 
-      <section
-        id="honors-and-awards"
-        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
-      >
-        <h4
-          class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
-        >
-          HONORS AND AWARDS
-        </h4>
-        <div class="border-b-2 border-black"></div>
-        <ul class="list-disc text-black mx-8 font-dm">
-          <li>Awarded Title of "Outstanding Student" in 2017</li>
+      <!-- Honors & Awards ────────────────────────────────────────────────────── -->
+      <section id="honors-and-awards" class="section-card hover:scale-105">
+        <h4 class="section-heading">HONORS AND AWARDS</h4>
+        <div class="section-divider"></div>
+
+        <ul class="list-disc text-black mx-8 font-dm mt-4">
+          <li>Awarded the title of "Outstanding Student" in 2017.</li>
           <li>
-            Recipient of Vikash Residential School Achiever’s Award for
-            exceptional performance in AISSCE-XII and JEE 2019
+            Recipient of Vikash Residential School Achiever's Award for exceptional
+            performance in AISSCE-XII and JEE 2019.
           </li>
         </ul>
       </section>
 
-      <section
-        id="volunteer-experience"
-        class="w-[90%] md:tracking-wider md:text-xl mx-3 my-4 hover:border-3 transition-transform duration-300 ease-in-out hover:scale-105 hover:rounded-xl hover:shadow-xl hover:shadow-orange-500 px-5 pt-2 pb-5 before:border-l-8 before:border-black before:pr-3 before:rounded-md bg-gradient-to-r from-gray-100 to-gray-200 to-99% rounded-xl"
-      >
-        <h4
-          class="my-3 border-2 bg-bgclr-100x border-neutral-700 text-black rounded-lg font-mono px-3 inline-block font-bold"
-        >
-          VOLUNTEER EXPERIENCE
-        </h4>
-        <div class="border-b-2 border-black"></div>
-        <ul class="list-disc text-black mx-8 font-dm">
+      <!-- Volunteer Experience ───────────────────────────────────────────────── -->
+      <section id="volunteer-experience" class="section-card hover:scale-105">
+        <h4 class="section-heading">VOLUNTEER EXPERIENCE</h4>
+        <div class="section-divider"></div>
+
+        <ul class="list-disc text-black mx-8 font-dm mt-4">
           <li>
             <b>Education Volunteer</b>
-            <div>
-              Volunteered to teach concepts to underprivileged students,
-              inspiring the next generation of scientists and engineers.
-            </div>
+            <p>
+              Volunteered to teach concepts to underprivileged students, inspiring the
+              next generation of scientists and engineers.
+            </p>
           </li>
-          <li>
+          <li class="mt-2">
             <b>Community Cleanup Initiatives</b>
-            <div>
-              Participated in community cleanup events to promote environmental
-              awareness and a cleaner, greener neighborhood.
-            </div>
+            <p>
+              Participated in community cleanup events to promote environmental awareness
+              and a cleaner, greener neighborhood.
+            </p>
           </li>
         </ul>
       </section>
+
     </main>
 
-    <footer class="text-black font-dm bg-bgclr-100x text-center">
-      © 2024 Designed by Dishant Sahu
+    <!-- ─── Footer ──────────────────────────────────────────────────────────── -->
+    <footer class="bg-bgclr-100x text-black font-dm text-center py-2">
+      &copy; <span id="year"></span> Designed by Dishant Sahu
     </footer>
-    <!-- <script src="projectcards.js" type="module"></script> -->
+
+    <!-- ─── Scripts ─────────────────────────────────────────────────────────── -->
+    <!-- projectcards.js must come before gsap so card HTML is in the DOM -->
     <script src="projectcards.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <!-- <script src="../path/to/flowbite/dist/flowbite.min.js"></script> -->
     <script src="gsapAnimation.js"></script>
+
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Wait for the DOM to be fully loaded
-        var menuToggle = document.querySelector(".menu-toggle");
-        var menu = document.getElementById("menu");
+      // ── Footer year ────────────────────────────────────────────────────────
+      document.getElementById("year").textContent = new Date().getFullYear();
 
-        // Hide the menu initially
-        menu.classList.add("hidden");
+      // ── Navigation toggle ──────────────────────────────────────────────────
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menu = document.getElementById("menu");
 
-        menuToggle.addEventListener("click", function () {
+        menuToggle.addEventListener("click", () => {
+          const isExpanded = !menu.classList.contains("hidden");
           menu.classList.toggle("hidden");
+          menuToggle.setAttribute("aria-expanded", String(!isExpanded));
         });
 
-        // Add this event listener to close the menu when an option is clicked
-        var navLinks = document.querySelectorAll(".nav-links");
-
-        navLinks.forEach(function (link) {
-          link.addEventListener("click", function () {
-            menu.classList.add("hidden");
-          });
-        });
+        // Close the menu after any nav link is clicked
+        document.querySelectorAll(".nav-links").forEach((link) =>
+          link.addEventListener("click", () => menu.classList.add("hidden"))
+        );
       });
 
-      const video = document.getElementById("background-video");
+      // ── Hero video playback speed ──────────────────────────────────────────
+      document.getElementById("background-video").playbackRate = 0.88;
 
-      // Set the playback rate (adjust this value accordingly)
-      video.playbackRate = 0.88;
+      // ── Expand navbar to full-width on scroll ──────────────────────────────
       const navContainer = document.getElementById("navContainer");
       window.addEventListener("scroll", () => {
-        // Check if the user has scrolled down (you can customize the scroll threshold)
-        if (window.scrollY > 50) {
-          navContainer.classList.remove("w-10%");
-          console.log(navContainer);
-          navContainer.classList.add("w-full");
-        } else {
-          navContainer.classList.remove("w-full");
-          navContainer.classList.add("w-10%");
-        }
+        navContainer.classList.toggle("w-full", window.scrollY > 50);
       });
     </script>
   </body>
